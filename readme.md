@@ -44,25 +44,19 @@ Este projeto apresenta dados de **temperatura e umidade** coletados por um senso
 git clone <link-do-seu-github>
 cd <nome-do-projeto>
 
-🔹 Estrutura do Projeto
+## 🔹 Configuração
 
-thingspeak_projeto/
-│
-├─ index.js        # Servidor Node.js e dashboard
-├─ .env            # Configurações do ThingSpeak
-└─ README.md       # Este arquivo
+1. Clone o repositório:  
+```bash
+git clone <link-do-seu-github>
+cd <nome-do-projeto>
 
-🔹 Demonstração
+Instale as dependências:
+npm install express axios dotenv
 
-Gráfico de Umidade: exibe histórico e valores atuais
+Crie um arquivo .env na raiz do projeto com as seguintes variáveis:
+CHANNEL_ID=XXXXX
+READ_API_KEY=XXXXXXX
+RESULTS=XXXXXXX
 
-Gráfico de Temperatura: exibe histórico e valores atuais
-
-Dashboard combinado: visualiza os dois indicadores simultaneamente
-
-Atualização em tempo real sem necessidade de recarregar a página
-
-🔹 Observações
-
-É possível alterar o intervalo de atualização no código (setInterval) de acordo com sua necessidade.
-Projeto ideal para aprendizado de visualização de dados IoT e integração com ThingSpeak.
+Substitua CHANNEL_ID e READ_API_KEY pelos dados do seu canal ThingSpeak.
